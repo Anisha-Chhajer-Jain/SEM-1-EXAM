@@ -11,3 +11,14 @@ btn.addEventListener("click",() => {
         btn.textContent="hide";
     }
 });
+const imag = image.value;
+console.log(imag);
+const btnn = btn.value;
+console.log(btnn);
+sessionStorage.setItem("image",imag);
+sessionStorage.setItem("btn",btnn);
+
+console.log("Send to session storage",{
+  imag: sessionStorage.getItem("image"),
+  btnn: sessionStorage.getItem("btn")
+});
